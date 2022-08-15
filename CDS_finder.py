@@ -3,12 +3,17 @@
 
 ### some functions taken from MYB_annotator and KIPEs ###
 
-__version__ = "v0.1"
+__version__ = "v0.11"
 
 __usage__ = """
 					python3 CDS_finder.py
 					--in <INPUT_FILE>
 					--out <OUTPUT_FILE>
+					
+					optional:
+					--len <MIN_CDS_LENGTH>[100]
+					
+					bug reports and feature requests: b.pucker@tu-bs.de
 					"""
 
 import os, re, sys, subprocess
@@ -107,8 +112,15 @@ def main( arguments ):
 	input_file = arguments[ arguments.index('--in')+1 ]
 	output_file = arguments[ arguments.index('--out')+1 ]
 	
+	if '--len' in arguments:
+		try:
+			min_CDS_len = int( arguments[ arguments.index('--len')+1 ] )
+		except ValueError:
+			min_CDS_len = 100
+	else:
+		min_CDS_len = 100
+	
 	assembly = load_sequences( input_file )
-	min_CDS_len = 100
 	
 	CDS_collection = find_longest_ORF( assembly, min_CDS_len )
 	
