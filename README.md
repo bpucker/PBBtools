@@ -10,6 +10,12 @@ This is a collection of tools developed by the [Plant Biotechnology and Bioinfor
 
 
 # MYB_annotator: Automatic identification and annotation of MYB transcription factors
+**Description**: This tool facilitates the identification of MYB transcription factors in a given species. Identified MYBs are assigned to well characterized orthologs and a functional annotation is transferred.
+
+**Link**: [MYB_annotator repository](https://github.com/bpucker/MYB_annotator) and [MYB_annotator webserver](http://pbb.bot.nat.tu-bs.de/MYB_annotator/)
+
+**Reference**: Pucker, B. Automatic identification and annotation of MYB gene family members in plants. BMC Genomics 23, 220 (2022). doi:[10.1186/s12864-022-08452-5](https://doi.org/10.1186/s12864-022-08452-5).
+
 
 
 # CoExp: Co-expression analysis
