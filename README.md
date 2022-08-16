@@ -48,5 +48,13 @@ This is a collection of tools developed by the [Plant Biotechnology and Bioinfor
 
 
 
+# MGSE: 
+
+# NAVIP: 
+
+# Long Read Walker
+
+
+
 # References
 Rempel A & Pucker B (2022). KIPEs3: Automatic annotation of biosynthesis pathways. bioRxiv 2022.06.30.498365; doi:[10.1101/2022.06.30.498365](https://doi.org/10.1101/2022.06.30.498365).
