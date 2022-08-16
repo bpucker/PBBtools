@@ -2,11 +2,11 @@
 This is a collection of tools developed by the [Plant Biotechnology and Bioinformatics](https://www.tu-braunschweig.de/en/ifp/pbb) group @ TU braunschweig. Many of these tools are available via our [BioinfToolServer](https://www.tu-braunschweig.de/en/ifp/pbb/tools).
 
 # KIPEs: Knowledge-based Identification of Pathway Enzymes
-*Description*: This tool facilitates the identification of genes/proteins involved in a particular pathway. KIPEs was initially developed for the annotation of the flavonoid biosynthesis, but can also be applied to other pathways.
+**Description**: This tool facilitates the identification of genes/proteins involved in a particular pathway. KIPEs was initially developed for the annotation of the flavonoid biosynthesis, but can also be applied to other pathways.
 
-*Link*: [KIPEs repository](https://github.com/bpucker/KIPEs) and [KIPEs webserver](http://pbb.bot.nat.tu-bs.de/KIPEs/)
+**Link**: [KIPEs repository](https://github.com/bpucker/KIPEs) and [KIPEs webserver](http://pbb.bot.nat.tu-bs.de/KIPEs/)
 
-*Reference*: Rempel A & Pucker B (2022). KIPEs3: Automatic annotation of biosynthesis pathways. bioRxiv 2022.06.30.498365; doi:[10.1101/2022.06.30.498365](https://doi.org/10.1101/2022.06.30.498365).
+**Reference**: Rempel A & Pucker B (2022). KIPEs3: Automatic annotation of biosynthesis pathways. bioRxiv 2022.06.30.498365; doi:[10.1101/2022.06.30.498365](https://doi.org/10.1101/2022.06.30.498365).
 
 
 # MYB_annotator: Automatic identification and annotation of MYB transcription factors
