@@ -13,3 +13,5 @@ This script reads all sequences from a given FASTA file and converts them into t
 https://github.com/bpucker/PBBTools/blob/main/transeq/transeq_readme.md
 
 
+# References
+Rempel A & Pucker B (2022). KIPEs3: Automatic annotation of biosynthesis pathways. bioRxiv 2022.06.30.498365; doi:[10.1101/2022.06.30.498365](https://doi.org/10.1101/2022.06.30.498365).
