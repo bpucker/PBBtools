@@ -48,9 +48,23 @@ This is a collection of tools developed by the [Plant Biotechnology and Bioinfor
 
 
 
-# MGSE: 
+# MGSE: Mapping-based Genome Size Estimation
+**Description**: This script estimates the size of a plant genome based on the coverage in a read mapping.
 
-# NAVIP: 
+**Link**: [MGSE repository](https://github.com/bpucker/MGSE)
+
+**Reference**: Pucker B. Mapping-based genome size estimation. bioRxiv 607390; doi:[10.1101/607390](https://doi.org/10.1101/607390).
+
+
+
+# NAVIP: Neighborhood-Aware Variant Impact Predictor
+**Description**: This script predicts the functional impact of sequence variants on the surrounding gene. NAVIP considers all variants in a gene simultaneously to account for their interactions.
+
+**Link**: [NAVIP repository](https://github.com/bpucker/NAVIP)
+
+**Reference**: Baasner, J.-S., Howard, D., Pucker, B.(2019). Influence of neighboring small sequence variants on functional impact prediction. bioRxiv. doi:[10.1101/596718](https://doi.org/10.1101/596718).
+
+
 
 # Long Read Walker
 
