@@ -67,7 +67,11 @@ This is a collection of tools developed by the [Plant Biotechnology and Bioinfor
 
 
 # Long Read Walker
+**Description**: This script closes the gaps between two contigs in a long read assembly by the extension of overlaps.
 
+**Link**: [LongReadWalker repository](https://github.com/bpucker/LongReadWalker)
+
+**Reference**: This repository.
 
 
 # References
