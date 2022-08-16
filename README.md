@@ -31,15 +31,21 @@ This is a collection of tools developed by the [Plant Biotechnology and Bioinfor
 
 
 # Identification of Open Reading Frame
-This script screens given nucleotide sequences for the longes Open Reading Frame (ORF) / coding sequence (CDS) that could encode a peptide sequence. The longest detected ORF/CDS per input sequence is reported.
+**Description**: This script screens given nucleotide sequences for the longes Open Reading Frame (ORF) / coding sequence (CDS) that could encode a peptide sequence. The longest detected ORF/CDS per input sequence is reported.
 
-https://github.com/bpucker/PBBTools/blob/main/cds_finder/cds_finder_readme.md
+**Link**: [CDS_finder repository](https://github.com/bpucker/PBBTools/blob/main/cds_finder/cds_finder_readme.md)
+
+**Reference**: This repository.
+
 
 
 # Translation of CDS into peptide sequence
-This script reads all sequences from a given FASTA file and converts them into the corresponding peptide sequences.
+**Description**: This script reads all sequences from a given FASTA file and converts them into the corresponding peptide sequences.
 
-https://github.com/bpucker/PBBTools/blob/main/transeq/transeq_readme.md
+**Link**: [transeq repository](https://github.com/bpucker/PBBTools/blob/main/transeq/transeq_readme.md)
+
+**Reference**: This repository.
+
 
 
 # References
