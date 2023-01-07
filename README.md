@@ -8,8 +8,10 @@ This is a collection of tools developed by the [Plant Biotechnology and Bioinfor
 
 **Link**: [KIPEs repository](https://github.com/bpucker/KIPEs) and [KIPEs webserver](http://pbb.bot.nat.tu-bs.de/KIPEs/)
 
-**Reference**: Rempel A & Pucker B (2022). KIPEs3: Automatic annotation of biosynthesis pathways. bioRxiv 2022.06.30.498365; doi:[10.1101/2022.06.30.498365](https://doi.org/10.1101/2022.06.30.498365).
+**References**: 
+Rempel A & Pucker B (2022). KIPEs3: Automatic annotation of biosynthesis pathways. bioRxiv 2022.06.30.498365; doi:[10.1101/2022.06.30.498365](https://doi.org/10.1101/2022.06.30.498365).
 
+Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in the Flavonoid Biosynthesis with Application on the Biomedicinal Plant Croton tiglium. Plants 2020, 9, 1103. doi:[10.3390/plants9091103](https://doi.org/10.3390/plants9091103).
 
 
 # MYB_annotator: Automatic identification and annotation of MYB transcription factors
@@ -73,6 +75,3 @@ This is a collection of tools developed by the [Plant Biotechnology and Bioinfor
 
 **Reference**: This repository.
 
-
-# References
-Rempel A & Pucker B (2022). KIPEs3: Automatic annotation of biosynthesis pathways. bioRxiv 2022.06.30.498365; doi:[10.1101/2022.06.30.498365](https://doi.org/10.1101/2022.06.30.498365).
