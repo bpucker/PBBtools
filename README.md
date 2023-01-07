@@ -75,3 +75,11 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 
 **Reference**: This repository.
 
+
+# Documentation of methods
+[Dry lab methods](https://github.com/bpucker/pbb-drylab)
+
+[Wet lab methods](https://github.com/bpucker/pbb-wetlab)
+
+
+
