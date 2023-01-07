@@ -1,5 +1,5 @@
 # PBBtools: bioinformatic tools developed by the Plant Biotechnology and Bioinformatics group @ TU Braunschweig
-This is a collection of tools developed by the [Plant Biotechnology and Bioinformatics](https://www.tu-braunschweig.de/en/ifp/pbb) group @ TU braunschweig. Many of these tools are available via our [BioinfToolServer](https://www.tu-braunschweig.de/en/ifp/pbb/tools).
+This is a collection of tools developed by the [Plant Biotechnology and Bioinformatics](https://www.tu-braunschweig.de/en/ifp/pbb) group @ TU Braunschweig. Many of these tools are available via our [BioinfToolServer](https://www.tu-braunschweig.de/en/ifp/pbb/tools).
 
 
 
