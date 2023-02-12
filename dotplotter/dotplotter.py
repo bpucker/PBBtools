@@ -3,7 +3,7 @@
 ### v0.1 ###
 
 __usage__ = """
-					python dotplotter.py
+					python3 dotplotter.py
 					option1:
 					--seq1 <SEQ1>
 					--seq2 <SEQ2>
