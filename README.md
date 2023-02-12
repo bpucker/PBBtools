@@ -32,7 +32,7 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 
 
 
-# Identification of Open Reading Frame
+# CDS_finder: Identification of Open Reading Frame
 **Description**: This script screens given nucleotide sequences for the longes Open Reading Frame (ORF) / coding sequence (CDS) that could encode a peptide sequence. The longest detected ORF/CDS per input sequence is reported.
 
 **Link**: [CDS_finder repository](https://github.com/bpucker/PBBTools/blob/main/cds_finder/cds_finder_readme.md)
@@ -41,7 +41,7 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 
 
 
-# Translation of CDS into peptide sequence
+# TranSeq: Translation of CDS into peptide sequence
 **Description**: This script reads all sequences from a given FASTA file and converts them into the corresponding peptide sequences.
 
 **Link**: [transeq repository](https://github.com/bpucker/PBBTools/blob/main/transeq/transeq_readme.md)
@@ -50,13 +50,12 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 
 
 
-# Visualization of sequence similarity in dot plot
+# Dotplotter: Visualization of sequence similarity in dot plot
 **Description**: This script compares to sequences and visualizes matches by dots in a 2D plot.
 
 **Link**: [dotplotter repository](https://github.com/bpucker/PBBtools/blob/main/dotplotter/dotplotter_readme.md)
 
 **Reference**: This repository.
-
 
 
 
