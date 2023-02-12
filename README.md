@@ -35,10 +35,10 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 
 
 
-# Heatmapper: Gene expression visualization
+# HeatmapPlotter: Gene expression visualization
 **Description**: This script generates a heatmap for a selection of genes and RNA-seq samples.
 
-**Link**: [Heatmapper repository]()
+**Link**: [HeatmapPlotter repository](https://github.com/bpucker/PBBtools/blob/main/heatmapper/heatmapper_readme.md)
 
 **References**: This repository.
 
