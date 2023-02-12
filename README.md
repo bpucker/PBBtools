@@ -35,6 +35,14 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 
 
 
+# Heatmapper: Gene expression visualization
+**Description**: This script generates a heatmap for a selection of genes and RNA-seq samples.
+
+**Link**: [Heatmapper repository]()
+
+**References**: This repository.
+
+
 # CDS_finder: Identification of Open Reading Frame
 **Description**: This script screens given nucleotide sequences for the longes Open Reading Frame (ORF) / coding sequence (CDS) that could encode a peptide sequence. The longest detected ORF/CDS per input sequence is reported.
 
