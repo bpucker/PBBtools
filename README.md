@@ -53,6 +53,15 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 
 
 
+# SeqEx: Extracting sequence of interest from FASTA file
+**Description**: This script extracts a specified region on a given sequence from a FASTA file.
+
+**Link**: [seqex repository](https://github.com/bpucker/PBBtools/blob/main/seqex/seqex_readme.md)
+
+**Reference**: Pucker B, Schilbert H, Schumacher SF. Integrating Molecular Biology and Bioinformatics Education. Journal of Integrative Bioinformatics. 2019;16(3): 20190005. doi:[10.1515/jib-2019-0005](https://doi.org/10.1515/jib-2019-0005).
+
+
+
 # Dotplotter: Visualization of sequence similarity in dot plot
 **Description**: This script compares to sequences and visualizes matches by dots in a 2D plot.
 
