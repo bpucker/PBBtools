@@ -50,6 +50,16 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 
 
 
+# Visualization of sequence similarity in dot plot
+**Description**: This script compares to sequences and visualizes matches by dots in a 2D plot.
+
+**Link**: [dotplotter repository](https://github.com/bpucker/PBBtools/blob/main/dotplotter/dotplotter_readme.md)
+
+**Reference**: This repository.
+
+
+
+
 # MGSE: Mapping-based Genome Size Estimation
 **Description**: This script estimates the size of a plant genome based on the coverage in a read mapping.
 
