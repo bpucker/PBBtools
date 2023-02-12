@@ -28,7 +28,10 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 
 **Link**: [CoExp repository](https://github.com/bpucker/CoExp) and [CoExp webserver](http://pbb.bot.nat.tu-bs.de/CoExp/)
 
-**Reference**: This repository.
+**References**: 
+Pucker B, Iorizzo M (2023) Apiaceae FNS I originated from F3H through tandem gene duplication. PLOS ONE 18(1): e0280155. doi:[10.1371/journal.pone.0280155](https://doi.org/10.1371/journal.pone.0280155).
+
+Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockington S. (2022). Evolutionary blocks to anthocyanin accumulation and the loss of an anthocyanin carrier protein in betalain-pigmented Caryophyllales. bioRxiv 2022.10.19.512958; doi:[10.1101/2022.10.19.512958](https://doi.org/10.1101/2022.10.19.512958).
 
 
 
