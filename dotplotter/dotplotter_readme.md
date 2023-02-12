@@ -6,7 +6,7 @@ Visualizing similarity of two sequences through a dot plot.
 ## Usage ##
 
 ```
-Usage
+Usage:
 python3 dotplotter.py --in1 <FILE> --in2 <FILE> --out <FILE>
 or
 python3 dotplotter.py --seq1 <STR> --seq2 <STR> --out <FILE>
