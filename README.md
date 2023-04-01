@@ -40,7 +40,7 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 # HeatmapPlotter: Gene expression visualization
 **Description**: This script generates a heatmap for a selection of genes and RNA-seq samples.
 
-**Link**: [HeatmapPlotter repository](https://github.com/bpucker/PBBtools/blob/main/heatmapper/heatmapper_readme.md)
+**Link**: [HeatmapPlotter repository](https://github.com/bpucker/PBBtools/blob/main/heatmapper/README.md)
 
 **References**: This repository.
 
@@ -48,7 +48,7 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 # CDS_finder: Identification of Open Reading Frame
 **Description**: This script screens given nucleotide sequences for the longes Open Reading Frame (ORF) / coding sequence (CDS) that could encode a peptide sequence. The longest detected ORF/CDS per input sequence is reported.
 
-**Link**: [CDS_finder repository](https://github.com/bpucker/PBBTools/blob/main/cds_finder/cds_finder_readme.md)
+**Link**: [CDS_finder repository](https://github.com/bpucker/PBBTools/blob/main/cds_finder/README.md)
 
 **Reference**: This repository.
 
@@ -57,7 +57,7 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 # TranSeq: Translation of CDS into peptide sequence
 **Description**: This script reads all sequences from a given FASTA file and converts them into the corresponding peptide sequences.
 
-**Link**: [transeq repository](https://github.com/bpucker/PBBTools/blob/main/transeq/transeq_readme.md)
+**Link**: [transeq repository](https://github.com/bpucker/PBBTools/blob/main/transeq/README.md)
 
 **Reference**: This repository.
 
@@ -66,7 +66,7 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 # SeqEx: Extracting sequence of interest from FASTA file
 **Description**: This script extracts a specified region on a given sequence from a FASTA file.
 
-**Link**: [seqex repository](https://github.com/bpucker/PBBtools/blob/main/seqex/seqex_readme.md)
+**Link**: [seqex repository](https://github.com/bpucker/PBBtools/blob/main/seqex/README.md)
 
 **Reference**: Pucker B, Schilbert H, Schumacher SF. Integrating Molecular Biology and Bioinformatics Education. Journal of Integrative Bioinformatics. 2019;16(3): 20190005. doi:[10.1515/jib-2019-0005](https://doi.org/10.1515/jib-2019-0005).
 
@@ -75,7 +75,7 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 # Dotplotter: Visualization of sequence similarity in dot plot
 **Description**: This script compares to sequences and visualizes matches by dots in a 2D plot.
 
-**Link**: [dotplotter repository](https://github.com/bpucker/PBBtools/blob/main/dotplotter/dotplotter_readme.md)
+**Link**: [dotplotter repository](https://github.com/bpucker/PBBtools/blob/main/dotplotter/README.md)
 
 **Reference**: This repository.
 
