@@ -25,6 +25,17 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 
 
 
+# bHLH_annotator: Automatic identification and annotation of bHLH transcription factors
+**Description**: This tool facilitates the identification of bHLH transcription factors in a given species. Identified bHLHs are assigned to well characterized orthologs and a functional annotation is transferred.
+
+**Link**: [bHLH_annotator repository](https://github.com/bpucker/bHLH_annotator) and [bHLH_annotator webserver](http://pbb.bot.nat.tu-bs.de/bHLH_annotator/)
+
+**Reference**: Thoben C. and Pucker B. (2023). Automatic annotation of the bHLH gene family in plants. bioRxiv 2023.05.02.539087; doi: [10.1101/2023.05.02.539087](https://doi.org/10.1101/2023.05.02.539087)
+
+
+
+
+
 # CoExp: Co-expression analysis
 **Description**: This tool performs a pairwise co-expression analysis for a given set of genes of interest. All co-expressed genes are identified for this set.
 
