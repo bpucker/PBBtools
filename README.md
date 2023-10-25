@@ -8,7 +8,7 @@ This is a collection of tools and useful scripts developed by the [Plant Biotech
 # KIPEs: Knowledge-based Identification of Pathway Enzymes
 **Description**: This tool facilitates the identification of genes/proteins involved in a particular pathway. KIPEs was initially developed for the annotation of the flavonoid biosynthesis, but can also be applied to other pathways.
 
-**Link**: [KIPEs repository](https://github.com/bpucker/KIPEs) and [KIPEs webserver](https://pbb-tools.de//KIPEs/)
+**Link**: [KIPEs repository](https://github.com/bpucker/KIPEs) and [KIPEs webserver](https://pbb-tools.de/KIPEs/)
 
 **References**: 
 Rempel A & Pucker B (2022). KIPEs3: Automatic annotation of biosynthesis pathways. bioRxiv 2022.06.30.498365; doi:[10.1101/2022.06.30.498365](https://doi.org/10.1101/2022.06.30.498365).
@@ -19,7 +19,7 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 # MYB_annotator: Automatic identification and annotation of MYB transcription factors
 **Description**: This tool facilitates the identification of MYB transcription factors in a given species. Identified MYBs are assigned to well characterized orthologs and a functional annotation is transferred.
 
-**Link**: [MYB_annotator repository](https://github.com/bpucker/MYB_annotator) and [MYB_annotator webserver](https://pbb-tools.de//MYB_annotator/)
+**Link**: [MYB_annotator repository](https://github.com/bpucker/MYB_annotator) and [MYB_annotator webserver](https://pbb-tools.de/MYB_annotator/)
 
 **Reference**: Pucker, B. Automatic identification and annotation of MYB gene family members in plants. BMC Genomics 23, 220 (2022). doi:[10.1186/s12864-022-08452-5](https://doi.org/10.1186/s12864-022-08452-5).
 
@@ -28,7 +28,7 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 # bHLH_annotator: Automatic identification and annotation of bHLH transcription factors
 **Description**: This tool facilitates the identification of bHLH transcription factors in a given species. Identified bHLHs are assigned to well characterized orthologs and a functional annotation is transferred.
 
-**Link**: [bHLH_annotator repository](https://github.com/bpucker/bHLH_annotator) and [bHLH_annotator webserver](https://pbb-tools.de//bHLH_annotator/)
+**Link**: [bHLH_annotator repository](https://github.com/bpucker/bHLH_annotator) and [bHLH_annotator webserver](https://pbb-tools.de/bHLH_annotator/)
 
 **Reference**: Thoben C. and Pucker B. (2023). Automatic annotation of the bHLH gene family in plants. bioRxiv 2023.05.02.539087; doi: [10.1101/2023.05.02.539087](https://doi.org/10.1101/2023.05.02.539087)
 
@@ -39,7 +39,7 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 # CoExp: Co-expression analysis
 **Description**: This tool performs a pairwise co-expression analysis for a given set of genes of interest. All co-expressed genes are identified for this set.
 
-**Link**: [CoExp repository](https://github.com/bpucker/CoExp) and [CoExp webserver](https://pbb-tools.de//CoExp/)
+**Link**: [CoExp repository](https://github.com/bpucker/CoExp) and [CoExp webserver](https://pbb-tools.de/CoExp/)
 
 **References**: 
 Pucker B, Iorizzo M (2023) Apiaceae FNS I originated from F3H through tandem gene duplication. PLOS ONE 18(1): e0280155. doi:[10.1371/journal.pone.0280155](https://doi.org/10.1371/journal.pone.0280155).
