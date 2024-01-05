@@ -30,7 +30,7 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 
 **Link**: [bHLH_annotator repository](https://github.com/bpucker/bHLH_annotator) and [bHLH_annotator webserver](https://pbb-tools.de/bHLH_annotator/)
 
-**Reference**: Thoben C. and Pucker B. (2023). Automatic annotation of the bHLH gene family in plants. bioRxiv 2023.05.02.539087; doi: [10.1101/2023.05.02.539087](https://doi.org/10.1101/2023.05.02.539087)
+**Reference**: Thoben C. and Pucker B. (2023). Automatic annotation of the bHLH gene family in plants. BMC Genomics 24, 780 (2023). doi: [10.1186/s12864-023-09877-2](https://doi.org/10.1186/s12864-023-09877-2).
 
 
 
