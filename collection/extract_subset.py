@@ -1,6 +1,6 @@
 ### Boas Pucker ###
 ### b.pucker@tu-bs.de ###
-### v0.3 ###
+### v0.31 ###
 
 __usage__ = """
 					python3 extract_subset.py
@@ -27,7 +27,9 @@ def load_expression_values( data_file ):
 	
 	exp_data = {}
 	with open( data_file, "r" ) as f:
-		headers = f.readline().strip().split('\t')[1:]
+		headers = f.readline().strip().split('\t')
+		if headers[0] in [ "gene", "geneID", "GeneID" ]:
+			headers = headers[1:]
 		for header in headers:
 			exp_data.update( { header: {} } )
 		line = f.readline()
@@ -77,7 +79,8 @@ def generate_output_file( accessions, exp_data, output_file ):
 			exp_data[ accession ]
 			valid_accessions.append( accession )
 		except KeyError:
-			pass
+			sys.stdout.write( "invalid accession: " + accession + '\n' )
+			sys.stdout.flush()
 	
 	sys.stdout.write( "number of valid accessions: " + str( len( valid_accessions ) ) + '\n' )
 	sys.stdout.flush()
