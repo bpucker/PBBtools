@@ -3,7 +3,7 @@
 
 ### some functions taken from MYB_annotator and KIPEs ###
 
-__version__ = "v0.11"
+__version__ = "v0.2"
 
 __usage__ = """
 					python3 CDS_finder.py
@@ -12,6 +12,7 @@ __usage__ = """
 					
 					optional:
 					--len <MIN_CDS_LENGTH>[100]
+					--atg <CDS_MUST_START_WITH_ATG>[on]
 					
 					bug reports and feature requests: b.pucker@tu-bs.de
 					"""
@@ -71,7 +72,8 @@ def identify_best_cds_candidate( cds_candidates ):
 		return ""
 
 
-def get_cds_candidates_per_frame( seq ):
+def get_cds_candidates_per_frame( seq, atg_status ):
+	"""! @brief identify all possible CDS in given reading frame """
 	
 	candidates = []
 	codons = [ seq[i:i+3] for i in range( 0, len( seq ), 3 ) ]
@@ -82,24 +84,29 @@ def get_cds_candidates_per_frame( seq ):
 			candidates.append( "".join( current_seq ) )
 			current_seq = []
 		else:
-			current_seq.append( codon )
+			if len( current_seq ) > 0:
+				current_seq.append( codon )
+			elif atg_status == True and codon == "ATG":
+				current_seq.append( codon )
+	if len( current_seq ) > 0:
+		candidates.append( "".join( current_seq ) )
 	return candidates
 
 
-def find_longest_ORF( assembly, len_cutoff ):
+def find_longest_ORF( assembly, len_cutoff, atg_status ):
 	"""! @brief find the longest ORF in contig """
 	
 	best_cds_candidates = {}
 	for key in list( assembly.keys() ):
 		cds_candidates = []
 		seq = assembly[ key ]
-		cds_candidates += get_cds_candidates_per_frame( seq )	#frame1
-		cds_candidates += get_cds_candidates_per_frame( seq[1:] )	#frame2
-		cds_candidates += get_cds_candidates_per_frame( seq[2:] )	#frame3
+		cds_candidates += get_cds_candidates_per_frame( seq, atg_status )	#frame1
+		cds_candidates += get_cds_candidates_per_frame( seq[1:], atg_status )	#frame2
+		cds_candidates += get_cds_candidates_per_frame( seq[2:], atg_status )	#frame3
 		revseq = revcomp( seq )
-		cds_candidates += get_cds_candidates_per_frame( revseq )	#frame4
-		cds_candidates += get_cds_candidates_per_frame( revseq[1:] )	#frame5
-		cds_candidates += get_cds_candidates_per_frame( revseq[2:] )	#frame6
+		cds_candidates += get_cds_candidates_per_frame( revseq, atg_status )	#frame4
+		cds_candidates += get_cds_candidates_per_frame( revseq[1:], atg_status )	#frame5
+		cds_candidates += get_cds_candidates_per_frame( revseq[2:], atg_status )	#frame6
 		best_cds_candidate = identify_best_cds_candidate( cds_candidates )
 		if len( best_cds_candidate ) > len_cutoff:
 			best_cds_candidates.update( { key: best_cds_candidate } )
@@ -120,9 +127,18 @@ def main( arguments ):
 	else:
 		min_CDS_len = 100
 	
+	if '--atg' in arguments:
+		atg_status = arguments[ arguments.index('--atg')+1 ].upper()
+		if atg_status == "OFF":
+			atg_status = False
+		else:
+			atg_status = True
+	else:
+		atg_status = True
+	
 	assembly = load_sequences( input_file )
 	
-	CDS_collection = find_longest_ORF( assembly, min_CDS_len )
+	CDS_collection = find_longest_ORF( assembly, min_CDS_len, atg_status )
 	
 	with open( output_file, "w" ) as out:
 		for key in list( CDS_collection.keys() ):
