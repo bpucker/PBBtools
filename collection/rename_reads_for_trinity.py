@@ -4,7 +4,7 @@
 
 __usage__ = """
 				PE mode:
-				python rename_reads_for_trinity.py
+				python3 rename_reads_for_trinity.py
 				--fwin <FW_READ_INPUT_FILENAME>
 				--rvin <RV_READ_INPUT_FILENAME>
 				--fwout <FW_READ_OUTPUT_FILENAME>
@@ -60,7 +60,7 @@ def main( arguments ):
 						line = f1.readline()
 						while line:
 							# --- generate read ID and update all variables --- #
-							ID = ":".join( map( str, [ "@NS500530", run, flowcell, lane, tile, x, y ] ) )
+							ID = ":".join( list( map( str, [ "@NS500530", run, flowcell, lane, tile, x, y ] ) ) )
 							x += 1
 							if x == 99999:
 								x = 1
@@ -68,15 +68,12 @@ def main( arguments ):
 								if y == 99999:
 									y = 1
 									tile += 1
-									print tile
 									if tile == 9999:
 										tile = 1000
 										lane += 1
-										print lane
 										if lane == 8:
 											lane = 1
 											run += 1
-											print run
 											
 							
 							# --- write block in forward read file --- #
@@ -102,7 +99,7 @@ def main( arguments ):
 				line = f1.readline()
 				while line:
 					# --- generate read ID and update all variables --- #
-					ID = ":".join( map( str, [ "@NS500530", run, flowcell, lane, tile, x, y ] ) )
+					ID = ":".join( list( map( str, [ "@NS500530", run, flowcell, lane, tile, x, y ] ) ) )
 					x += 1
 					if x == 99999:
 						x = 1
@@ -110,15 +107,12 @@ def main( arguments ):
 						if y == 99999:
 							y = 1
 							tile += 1
-							print tile
 							if tile == 9999:
 								tile = 1000
 								lane += 1
-								print lane
 								if lane == 8:
 									lane = 1
 									run += 1
-									print run
 					# --- write read record into output file --- #
 					out_fw.write( ID + ' 1:N:0:ACACAG\n' )
 					out_fw.write( f1.readline() )
