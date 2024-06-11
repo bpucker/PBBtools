@@ -1,6 +1,6 @@
 ### Boas Pucker ###
-### bpucker@cebitec.uni-bielefeld.de ###
-### v0.2 ###
+### b.pucker@tu-bs.de ###
+### v0.3 ###
 
 __usage__ = """
 				PE mode:
@@ -11,7 +11,7 @@ __usage__ = """
 				--rvout <RV_READ_OUTPUT_FILENAME>
 				
 				SE mode:
-				python rename_reads_for_trinity.py
+				python3 rename_reads_for_trinity.py
 				--fwin <FW_READ_INPUT_FILENAME>
 				--fwout <FW_READ_OUTPUT_FILENAME>
 				"""
@@ -76,20 +76,23 @@ def main( arguments ):
 											run += 1
 											
 							
-							# --- write block in forward read file --- #
-							out_fw.write( ID + ' 1:N:0:ACACAG\n' )
-							out_fw.write( f1.readline() )
+							# --- read block from read file1 --- #
+							header1 =  ID + ' 1:N:0:ACACAG\n'
+							seq1 = f1.readline()
 							f1.readline()
-							out_fw.write( "+\n" )
-							out_fw.write( f1.readline() )
+							qual1 = f1.readline()
 							
-							# --- write block in rv read file --- #
+							# --- read block from read file2 --- #
 							f2.readline()
-							out_rv.write( ID + ' 2:N:0:ACACAG\n' )
-							out_rv.write( f2.readline() )
+							header2 =  ID + ' 2:N:0:ACACAG\n'
+							seq2 = f2.readline()
 							f2.readline()
-							out_rv.write( "+\n" )
-							out_rv.write( f2.readline() )
+							qual2 = f2.readline()
+							
+							if len( seq1 ) == len( qual1 ) and len( seq1 ) > 0:
+								if len( seq2 ) == len( qual2 ) and len( seq2 ) > 0:
+									out_fw.write( header1 + seq1 + "+\n" + qual1  )
+									out_rv.write( header2 + seq2 + "+\n" + qual2  )
 							
 							line = f1.readline()
 	#SE mode
@@ -114,11 +117,14 @@ def main( arguments ):
 									lane = 1
 									run += 1
 					# --- write read record into output file --- #
-					out_fw.write( ID + ' 1:N:0:ACACAG\n' )
-					out_fw.write( f1.readline() )
+					header1 =  ID + ' 1:N:0:ACACAG\n'
+					seq1 = f1.readline()
 					f1.readline()
-					out_fw.write( "+\n" )
-					out_fw.write( f1.readline() )
+					qual1 = f1.readline()
+					
+					if len( seq1 ) == len( qual1 ) and len( seq1 ) > 0:
+						out_fw.write( header1 + seq1 + "+\n" + qual1  )
+					
 					line = f1.readline()
 
 if '--fwin' in sys.argv and '--fwout' in sys.argv:
