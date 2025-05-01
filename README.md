@@ -1,7 +1,7 @@
 [![DOI](https://zenodo.org/badge/524938056.svg)](https://zenodo.org/badge/latestdoi/524938056)
 
-# PBBtools: bioinformatic tools developed by the Plant Biotechnology and Bioinformatics group @ TU Braunschweig
-This is a collection of tools and useful scripts developed by the [Plant Biotechnology and Bioinformatics](https://www.tu-braunschweig.de/en/ifp/pbb) research group @ TU Braunschweig. Many of these tools are freely available through our [BioinfToolServer](https://www.tu-braunschweig.de/en/ifp/pbb/tools). Please [get in touch](https://www.tu-braunschweig.de/en/ifp/pbb/contact) if you have any questions or suggestions for additional features.
+# PBBtools: bioinformatic tools developed by PuckerLab
+This is a collection of tools and useful scripts developed by members of the [PuckerLab](https://www.mps.uni-bonn.de). Many of these tools are freely available through our [BioinfToolServer](https://www.pbb-tools.de). Please [get in touch](https://www.izmb.uni-bonn.de/en/molecular-plant-sciences/contact) if you have any questions or suggestions for additional features.
 
 
 
