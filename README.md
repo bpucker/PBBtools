@@ -11,7 +11,7 @@ This is a collection of tools and useful scripts developed by members of the [Pu
 **Link**: [KIPEs repository](https://github.com/bpucker/KIPEs) and [KIPEs webserver](https://pbb-tools.de/KIPEs/)
 
 **References**: 
-Rempel A & Pucker B (2022). KIPEs3: Automatic annotation of biosynthesis pathways. bioRxiv 2022.06.30.498365; doi:[10.1101/2022.06.30.498365](https://doi.org/10.1101/2022.06.30.498365).
+Rempel A., Choudhary N. and Pucker B. (2023). KIPEs3: Automatic annotation of biosynthesis pathways. PLOS ONE 18(11): e0294342. doi: [10.1371/journal.pone.0294342](https://doi.org/10.1371/journal.pone.0294342).
 
 Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in the Flavonoid Biosynthesis with Application on the Biomedicinal Plant Croton tiglium. Plants 2020, 9, 1103. doi:[10.3390/plants9091103](https://doi.org/10.3390/plants9091103).
 
