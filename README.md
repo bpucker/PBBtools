@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/524938056.svg)](https://zenodo.org/badge/latestdoi/524938056)
+[![DOI](https://zenodo.org/badge/524938056.svg)](https://doi.org/10.5281/zenodo.7720916)
 
 # PBBtools: bioinformatic tools developed by PuckerLab
 This is a collection of tools and useful scripts developed by members of the [PuckerLab](https://www.pbb.uni-bonn.de). Many of these tools are freely available through our [BioinfToolServer](https://www.pbb-tools.de). Please [get in touch](https://www.izmb.uni-bonn.de/en/molecular-plant-sciences/contact) if you have any questions or suggestions for additional features.
