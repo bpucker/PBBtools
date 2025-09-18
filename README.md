@@ -44,7 +44,7 @@ Pucker, B.; Reiher, F.; Schilbert, H.M. Automatic Identification of Players in t
 **References**: 
 Pucker B, Iorizzo M (2023) Apiaceae FNS I originated from F3H through tandem gene duplication. PLOS ONE 18(1): e0280155. doi:[10.1371/journal.pone.0280155](https://doi.org/10.1371/journal.pone.0280155).
 
-Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockington S. (2022). Evolutionary blocks to anthocyanin accumulation and the loss of an anthocyanin carrier protein in betalain-pigmented Caryophyllales. bioRxiv 2022.10.19.512958; doi:[10.1101/2022.10.19.512958](https://doi.org/10.1101/2022.10.19.512958).
+Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockington S. (2024). Evolutionary blocks to anthocyanin accumulation and the loss of an anthocyanin carrier protein in betalain-pigmented Caryophyllales. New Phytol, 241: 471-489. doi:[10.1111/nph.19341](https://doi.org/10.1111/nph.19341).
 
 
 
@@ -97,7 +97,7 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 
 **Link**: [MGSE repository](https://github.com/bpucker/MGSE)
 
-**Reference**: Pucker B. Mapping-based genome size estimation. bioRxiv 607390; doi:[10.1101/607390](https://doi.org/10.1101/607390).
+**Reference**: Natarajan, S., Gehrke, J. & Pucker, B. Mapping-based genome size estimation. BMC Genomics 26, 482 (2025). doi: [10.1186/s12864-025-11640-8](https://doi.org/10.1186/s12864-025-11640-8).
 
 
 
@@ -106,7 +106,7 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 
 **Link**: [NAVIP repository](https://github.com/bpucker/NAVIP)
 
-**Reference**: Baasner, J.-S., Howard, D., Pucker, B.(2019). Influence of neighboring small sequence variants on functional impact prediction. bioRxiv. doi:[10.1101/596718](https://doi.org/10.1101/596718).
+**Reference**: Baasner J-S, Rempel A, Howard D, Pucker B (2025) NAVIP: Unraveling the influence of neighboring small sequence variants on functional impact prediction. PLoS Comput Biol 21(2): e1012732. doi: [10.1371/journal.pcbi.1012732](https://doi.org/10.1371/journal.pcbi.1012732).
 
 
 
@@ -115,7 +115,7 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 
 **Link**: [LongReadWalker repository](https://github.com/bpucker/LongReadWalker)
 
-**Reference**: This repository.
+**Reference**: Sielemann, K., Pucker, B., Orsini, E. et al. Genomic characterization of a nematode tolerance locus in sugar beet. BMC Genomics 24, 748 (2023). doi: [10.1186/s12864-023-09823-2](https://doi.org/10.1186/s12864-023-09823-2).
 
 
 # Documentation of methods
