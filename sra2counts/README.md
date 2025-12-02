@@ -1,6 +1,7 @@
 # SRA2COUNTS
 
 This README explains how to automatically download FASTQ files from the Sequence Read Archive and to process them with kallisto for the generation of count tables. The script can be started multiple times with the same input and output settings to allow running different SRA data sets in parallel. However, the first job needs some time to prepare the kallisto index which will then be used by all jobs. Once a sample from the SRA is compeletely processed and a count table exists for that sample, the related FASTQ and temp files will be deleted automatically to save disk space.
+This script restricts the analyzed samples to paired-end datasets, because kallisto can automatically assess the fragment distribution length for such samples. Single end samples are ignored.
 
 
 ## Usage ##
