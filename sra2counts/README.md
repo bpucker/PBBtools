@@ -45,5 +45,5 @@ Optional:
 
 
 ## References
-Pucker & Iorizzo, 2023: [10.1371/journal.pone.0280155](https://doi.org/10.1371/journal.pone.0280155).
+reads2count.py is based on previously published scripts: Pucker & Iorizzo, 2023: [10.1371/journal.pone.0280155](https://doi.org/10.1371/journal.pone.0280155).
 
