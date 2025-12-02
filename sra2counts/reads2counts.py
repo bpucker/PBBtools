@@ -2,7 +2,7 @@
 ### pucker@uni-bonn.de ###
 ### Based on previously published scripts: 10.1371/journal.pone.0280155 ###
 
-__version__ = """v0.13	"""
+__version__ = """v0.14	"""
 
 __usage__ = """
 					python3 reads2counts.py (""" +  __version__	+ """)
@@ -471,25 +471,44 @@ def main( arguments ):
 	for idx, ID in enumerate( IDs ):
 		sys.stdout.write( "processing " + str( idx+1 ) + "/" + str( len( IDs ) ) + "\t" + ID + "\n" )
 		sys.stdout.flush()
-		output_directory = fastq_folder + ID + "/"
-		if not os.path.exists( output_directory ):
-			os.makedirs( output_directory )
-			try:
-				cmd = "".join( [ 	fastq_dump,
-								" --split-files --outdir ",
-								output_directory,
-								" --gzip --skip-technical --read-filter pass --dumpbase --split-3 --clip ",	#--readids 
-								ID
-							] )
-				p = subprocess.Popen( args= cmd, shell=True )
-				p.communicate()
+		
+		# --- check if sample was already done (count table) --- #
+		count_table = counttable_output_folder + ID + ".tsv"
+		compressed_count_table = counttable_output_folder + ID + ".tsv.gz"
+		if os.path.exists( count_table ) + os.path.exists( compressed_count_table  ) < 1:	#check if a count table file exists
+			output_directory = fastq_folder + ID + "/"
+			if not os.path.exists( output_directory ):	#no folder for FASTQs of current SRA sample
+				os.makedirs( output_directory )
+				try:
+					cmd = "".join( [ 	fastq_dump,
+									" --split-files --outdir ",
+									output_directory,
+									" --gzip --skip-technical --read-filter pass --dumpbase --split-3 --clip ",	#--readids 
+									ID
+								] )
+					p = subprocess.Popen( args= cmd, shell=True )
+					p.communicate()
+					
+					# --- run kallisto analysis --- #
+					kallisto_quantification( cds_file, output_directory, kallisto, threads, counttable_output_folder, tmp_cluster_folder )
+					
+				except:
+					sys.stdout.write("ERROR (unknown issue): " + ID + "\n" )
+					sys.stdout.flush()
 				
-				# --- run kallisto analysis --- #
-				kallisto_quantification( cds_file, output_directory, kallisto, threads, counttable_output_folder, tmp_cluster_folder )
-				
-			except:
-				sys.stdout.write("ERROR: " + ID + "\n" )
-				sys.stdout.flush()
+				# --- remove FASTQ folder --- #	
+				try:
+					p = subprocess.Popen( args= "rm -r " + output_directory, shell=True )
+					p.communicate()
+					try:
+						p = subprocess.Popen( args= "rm -r " + tmp_cluster_folder + ID + "/", shell=True )
+						p.communicate()
+					except:
+						sys.stdout.write("ERROR (TMP folder deletion failed): " + ID + "\n" )
+						sys.stdout.flush()
+				except:
+					sys.stdout.write("ERROR (FASTQ folder deletion failed): " + ID + "\n" )
+					sys.stdout.flush()
 	
 	# --- merge count tables --- #
 	counts_output_file = prefix + "counts_table.txt"
