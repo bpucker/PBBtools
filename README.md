@@ -134,6 +134,15 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 **Reference**: Sielemann, K., Pucker, B., Orsini, E. et al. Genomic characterization of a nematode tolerance locus in sugar beet. BMC Genomics 24, 748 (2023). doi: [10.1186/s12864-023-09823-2](https://doi.org/10.1186/s12864-023-09823-2).
 
 
+# DupyliCate
+**Description**: This script discovers and characterizes gene duplications.
+
+**Link**: [DupyliCate repository](https://github.com/ShakNat/DupyliCate)
+
+**Reference**: Natarajan S. & Pucker B. (2025). DupyliCate - mining, classifying, and characterizing gene duplications. bioRxiv 2025.10.10.681656; doi: [10.1101/2025.10.10.681656](https://doi.org/10.1101/2025.10.10.681656).
+
+
+
 # Documentation of methods
 [Dry lab methods](https://github.com/bpucker/pbb-drylab)
 
