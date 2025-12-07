@@ -3,6 +3,7 @@
 # PBBtools: bioinformatic tools developed by PuckerLab
 This is a collection of tools and useful scripts developed by members of the [PuckerLab](https://www.pbb.uni-bonn.de). Many of these tools are freely available through our [BioinfToolServer](https://www.pbb-tools.de). Please [get in touch](https://www.izmb.uni-bonn.de/en/molecular-plant-sciences/contact) if you have any questions or suggestions for additional features.
 
+<img alt="PuckerLab logo" src="https://github.com/bpucker/figures/blob/main/PuckerLabLogo.png?raw=true" width="400">
 
 
 # KIPEs: Knowledge-based Identification of Pathway Enzymes
