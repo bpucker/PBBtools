@@ -18,7 +18,7 @@ This is a collection of tools and useful scripts developed by members of the [Pu
 - [MGSE](https://github.com/bpucker/PBBtools/blob/main/README.md#mgse-mapping-based-genome-size-estimation): Mapping-based Genome Size Estimation
 - [NAVIP](https://github.com/bpucker/PBBtools/blob/main/README.md#navip-neighborhood-aware-variant-impact-predictor): Neighborhood-Aware Variant Impact Predictor
 - [LongReadWalker](https://github.com/bpucker/PBBtools/blob/main/README.md#long-read-walker): closing assembly gaps with long read walking
-- [CoExpPhylo](): discovery of pathway associated genes through cross-species coexpression
+- [CoExpPhylo](https://github.com/bpucker/PBBtools/blob/main/README.md#coexpphylo): discovery of pathway associated genes through cross-species coexpression
 - [DupyliCate](https://github.com/bpucker/PBBtools/blob/main/README.md#dupylicate): discovery and characterization of gene duplications
 
 
