@@ -124,5 +124,5 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 
 [Wet lab methods](https://github.com/bpucker/pbb-wetlab)
 
-
+[de.NBI2025 courses by PuckerLab](https://github.com/bpucker/teaching/blob/master/deNBI2025)
 
