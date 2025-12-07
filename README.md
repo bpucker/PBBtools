@@ -18,7 +18,8 @@ This is a collection of tools and useful scripts developed by members of the [Pu
 - [MGSE](https://github.com/bpucker/PBBtools/blob/main/README.md#mgse-mapping-based-genome-size-estimation): Mapping-based Genome Size Estimation
 - [NAVIP](https://github.com/bpucker/PBBtools/blob/main/README.md#navip-neighborhood-aware-variant-impact-predictor): Neighborhood-Aware Variant Impact Predictor
 - [LongReadWalker](https://github.com/bpucker/PBBtools/blob/main/README.md#long-read-walker): closing assembly gaps with long read walking
-- [DupyliCate](): discovery and characterization of gene duplications
+- [CoExpPhylo](): discovery of pathway associated genes through cross-species coexpression
+- [DupyliCate](https://github.com/bpucker/PBBtools/blob/main/README.md#dupylicate): discovery and characterization of gene duplications
 
 
 # KIPEs: Knowledge-based Identification of Pathway Enzymes
@@ -132,6 +133,14 @@ Pucker B., Walker-Hale N., Yim W.C., Cushman J.C., Crumm A., Yang Y., Brockingto
 **Link**: [LongReadWalker repository](https://github.com/bpucker/LongReadWalker)
 
 **Reference**: Sielemann, K., Pucker, B., Orsini, E. et al. Genomic characterization of a nematode tolerance locus in sugar beet. BMC Genomics 24, 748 (2023). doi: [10.1186/s12864-023-09823-2](https://doi.org/10.1186/s12864-023-09823-2).
+
+
+# CoExpPhylo
+**Description**: Discovery of novel pathway associated genes based on cross-species coexpression analysis.
+
+**Link**: [CoExpPhylo repository](https://github.com/bpucker/CoExpPhylo)
+
+**Reference**: Gruenig N. & Pucker B. (2025). CoExpPhylo - A Novel Pipeline for Biosynthesis Gene Discovery. BMC Genomics 26, 807 (2025). doi: [10.1186/s12864-025-12061-3](https://doi.org/10.1186/s12864-025-12061-3).
 
 
 # DupyliCate
