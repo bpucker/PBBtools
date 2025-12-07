@@ -6,19 +6,19 @@ This is a collection of tools and useful scripts developed by members of the [Pu
 <img alt="PuckerLab logo" src="https://github.com/bpucker/figures/blob/main/PuckerLabLogo.png?raw=true" width="400">
 
 # Table of content
-- KIPEs: automatic annotation of a biosynthesis pathway
-- MYB_annotator: automatic annotation of the MYB gene family
-- bHLH_annotator: automatic annotation of the bHLH gene family
-- CoExp: coexpression analysis based on RNA-seq
-- HeatmapPlotter: generate a heatmap based on RNA-seq data
-- CDS_finder: find CDS in transcripts
-- TranSeq: translation of coding sequences
-- SeqEx: sequence extraction
-- Dotplotter: comparison of sequences based on dot plot
-- MGSE: Mapping-based Genome Size Estimation
-- NAVIP: Neighborhood-Aware Variant Impact Predictor
-- LongReadWalker: closing assembly gaps with long read walking
-- DupyliCate: discovery and characterization of gene duplications
+- [KIPEs](https://github.com/bpucker/PBBtools/blob/main/README.md#kipes-knowledge-based-identification-of-pathway-enzymes): automatic annotation of a biosynthesis pathway
+- [MYB_annotator](https://github.com/bpucker/PBBtools/blob/main/README.md#myb_annotator-automatic-identification-and-annotation-of-myb-transcription-factors): automatic annotation of the MYB gene family
+- [bHLH_annotator](https://github.com/bpucker/PBBtools/blob/main/README.md#bhlh_annotator-automatic-identification-and-annotation-of-bhlh-transcription-factors): automatic annotation of the bHLH gene family
+- [CoExp](https://github.com/bpucker/PBBtools/blob/main/README.md#coexp-co-expression-analysis): coexpression analysis based on RNA-seq
+- [HeatmapPlotter](https://github.com/bpucker/PBBtools/blob/main/README.md#heatmapplotter-gene-expression-visualization): generate a heatmap based on RNA-seq data
+- [CDS_finder](https://github.com/bpucker/PBBtools/blob/main/README.md#cds_finder-identification-of-open-reading-frame): find CDS in transcripts
+- [TranSeq](https://github.com/bpucker/PBBtools/blob/main/README.md#transeq-translation-of-cds-into-peptide-sequence): translation of coding sequences
+- [SeqEx](https://github.com/bpucker/PBBtools/blob/main/README.md#seqex-extracting-sequence-of-interest-from-fasta-file): sequence extraction
+- [Dotplotter](https://github.com/bpucker/PBBtools/blob/main/README.md#dotplotter-visualization-of-sequence-similarity-in-dot-plot): comparison of sequences based on dot plot
+- [MGSE](https://github.com/bpucker/PBBtools/blob/main/README.md#mgse-mapping-based-genome-size-estimation): Mapping-based Genome Size Estimation
+- [NAVIP](https://github.com/bpucker/PBBtools/blob/main/README.md#navip-neighborhood-aware-variant-impact-predictor): Neighborhood-Aware Variant Impact Predictor
+- [LongReadWalker](https://github.com/bpucker/PBBtools/blob/main/README.md#long-read-walker): closing assembly gaps with long read walking
+- [DupyliCate](): discovery and characterization of gene duplications
 
 
 # KIPEs: Knowledge-based Identification of Pathway Enzymes
