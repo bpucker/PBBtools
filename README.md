@@ -16,7 +16,7 @@ This is a collection of tools and useful scripts developed by members of the [Pu
 - SeqEx: sequence extraction
 - Dotplotter: comparison of sequences based on dot plot
 - MGSE: Mapping-based Genome Size Estimation
-- NAVIP: Neighbourhood-Aware Variant Impact Predictor
+- NAVIP: Neighborhood-Aware Variant Impact Predictor
 - LongReadWalker: closing assembly gaps with long read walking
 - DupyliCate: discovery and characterization of gene duplications
 
