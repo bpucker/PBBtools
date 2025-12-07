@@ -5,6 +5,21 @@ This is a collection of tools and useful scripts developed by members of the [Pu
 
 <img alt="PuckerLab logo" src="https://github.com/bpucker/figures/blob/main/PuckerLabLogo.png?raw=true" width="400">
 
+# Table of content
+- KIPEs: automatic annotation of a biosynthesis pathway
+- MYB_annotator: automatic annotation of the MYB gene family
+- bHLH_annotator: automatic annotation of the bHLH gene family
+- CoExp: coexpression analysis based on RNA-seq
+- HeatmapPlotter: generate a heatmap based on RNA-seq data
+- CDS_finder: find CDS in transcripts
+- TranSeq: translation of coding sequences
+- SeqEx: sequence extraction
+- Dotplotter: comparison of sequences based on dot plot
+- MGSE: Mapping-based Genome Size Estimation
+- NAVIP: Neighbourhood-Aware Variant Impact Predictor
+- LongReadWalker: closing assembly gaps with long read walking
+- DupyliCate: discovery and characterization of gene duplications
+
 
 # KIPEs: Knowledge-based Identification of Pathway Enzymes
 **Description**: This tool facilitates the identification of genes/proteins involved in a particular pathway. KIPEs was initially developed for the annotation of the flavonoid biosynthesis, but can also be applied to other pathways.
