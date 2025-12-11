@@ -3,7 +3,7 @@
 Please see the usage in the individual scripts for details.
 
 ## construct_anno.py
-
+This script annotates novel polypeptide sequences by comparison against a reference (typically _A. thaliana_). Annotation text from the reference sequences is transferred to the novel sequences. Therefore, reciprocal best BLAST hits (RBHs) are identified between the novel sequences and the reference sequences. These are likely to be orthologs. If no orthologs are detected, the best hit for each novel sequence is utilized. 
 
 
 ```
