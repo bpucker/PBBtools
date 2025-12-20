@@ -2,6 +2,7 @@
 
 # PBBtools: bioinformatic tools developed by PuckerLab
 This is a collection of tools and useful scripts developed by members of the [PuckerLab](https://www.pbb.uni-bonn.de). Many of these tools are freely available through our [BioinfToolServer](https://www.pbb-tools.de). Please [get in touch](https://www.izmb.uni-bonn.de/en/molecular-plant-sciences/contact) if you have any questions or suggestions for additional features.
+If you would like to learn more about molecular biology or bioinformatics basics, check out the materials in the [teaching repository](https://github.com/bpucker/teaching).
 
 <img alt="PuckerLab logo" src="https://github.com/bpucker/figures/blob/main/PuckerLabLogo.png?raw=true" width="400">
 
