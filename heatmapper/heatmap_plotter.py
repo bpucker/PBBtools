@@ -1,6 +1,6 @@
 ### Boas Pucker ###
 ### pucker@uni-bonn.de ###
-### v0.3 ###
+### v0.31 ###
 
 __usage__ = """
 					python3 heatmap_plotter.py
@@ -49,7 +49,7 @@ def load_exp( gene_file ):
 	exp = {}
 	with open( gene_file, "r" ) as f:
 		sample_order = f.readline().strip().split('\t')
-		if sample_order[0] in [ "genes", "gene" ]:
+		if sample_order[0] in [ "genes", "gene", "GeneID", "GeneIDs" ]:
 			sample_order = sample_order[1:]
 		for header in sample_order:
 			exp.update( { header: {} } )
