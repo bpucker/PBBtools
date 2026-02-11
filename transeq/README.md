@@ -1,5 +1,5 @@
 # Translation of CDS into peptide sequence
-This script reads all sequences from a given FASTA file and converts them into the corresponding peptide sequences. It translates unknown/ambiguous codons (e.g., containing N) to 'X'. If --internal-stop-to-x is provided, internal '*' are converted to 'X' (a final '*' is kept).
+This script reads all sequences from a given FASTA file and converts them into the corresponding peptide sequences. It translates unknown/ambiguous codons (e.g., containing N) to 'X'. If --internal-stop-to-x is provided, internal stop codons (represented by '__\*__') are converted to 'X' (a final '*' is kept).
 
 ## Usage ##
 
