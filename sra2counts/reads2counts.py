@@ -2,7 +2,7 @@
 ### pucker@uni-bonn.de ###
 ### Based on previously published scripts: 10.1371/journal.pone.0280155 ###
 
-__version__ = """v0.14	"""
+__version__ = """v0.15	"""
 
 __usage__ = """
 					python3 reads2counts.py (""" +  __version__	+ """)
@@ -21,7 +21,7 @@ __usage__ = """
 					bug reports and feature requests: pucker@uni-bonn.de
 					"""
 
-import os, sys, glob, time, subprocess
+import os, sys, glob, time, subprocess, re
 try:
 	import gzip
 except ImportError:
@@ -30,9 +30,54 @@ try:
 	import matplotlib.pyplot as plt
 except ImportError:
 	pass
+import shutil
+from pathlib import Path 
 
 # --- end of imports --- #
 
+def get_sra_cache_dir():
+	""" search for repository cache root """
+	try: 
+		result = subprocess.run(
+			["vdb-config", "-o", "n"],
+			capture_output = True,
+			text = True,
+			check = True
+			)
+		config_output = result.stdout
+		
+		match = re.search(r'/repository/user/cache/root\s*=\s*"([^"]+)"', config_output)
+		if match:
+			return match.group(1)
+		
+		match = re.search(r'/repository/user/main/public/root\s*=\s*"([^"]+)"', config_output)
+		if match:
+			return match.group(1)
+		
+	except Exception: 
+		pass
+	
+	return os.path.expanduser("~/.ncbi")
+
+def cleanup_sra_files(accession, cache_dir):
+    """ deletes .sra and .sra.cache files for one accession """
+    
+    cache_dir = Path(cache_dir).expanduser()
+    
+    if not cache_dir.exists():
+        return
+        
+    # .sra files
+    sra_file = cache_dir / f"{accession}.sra"
+    if sra_file.exists():
+        sra_file.unlink()
+        
+    # .sra.cache files
+    for p in cache_dir.glob(f"{accession}.sra.cache*"):
+        if p.is_dir():
+            shutil.rmtree(p)
+        else:
+            p.unlink()
 
 def get_data_for_jobs_to_run( folder, counttable_output_folder, index_file, tmp_cluster_folder ):
 	"""! @brief collect all infos to run jobs """
@@ -407,7 +452,7 @@ def main( arguments ):
 	if '--cache' in arguments:
 		cache_dir = arguments[ arguments.index( '--cache' )+1 ]
 	else:
-		cache_dir = "/vol/tmp"
+		cache_dir = get_sra_cache_dir()
 	
 	if '--min' in arguments:
 		min_cutoff = int( arguments[ arguments.index('--min')+1 ] )
@@ -491,6 +536,13 @@ def main( arguments ):
 					
 					# --- run kallisto analysis --- #
 					kallisto_quantification( cds_file, output_directory, kallisto, threads, counttable_output_folder, tmp_cluster_folder )
+					
+					# --- cleanup SRA cache for finished sample --- #
+					try:
+						cleanup_sra_files( ID, cache_dir)
+					except Exception as e:
+						sys.stdout.write(f"WARNING: SRA cleanup failes for {ID}: {e}\n")
+						sys.stdout.flush()
 					
 				except:
 					sys.stdout.write("ERROR (unknown issue): " + ID + "\n" )
